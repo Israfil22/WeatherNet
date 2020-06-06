@@ -1,0 +1,33 @@
+[---------GENERAL----------]
+		200 - OK
+
+[-----SERVER  RESPONCES----]
+	
+		418 - NO FORMATED JSON
+		
+		601 - WRONG "client_type"	| ("TERMINAL", "ARUINO")
+		602 - WRONG "access_key"
+		
+	{FOR 	ARUINO}
+		801 - NO SLOTS AVAILABLE
+		802 - NO MATCHES "access_key" & "unique_id"
+		
+	{FOR TERMINAL}
+		701 - WRONG "method"	| ("GET", "PUT")
+		702 - NO MATCHES FOR THESE "access_key" & "unique_id"
+		703 - NO CONNECTION WITH ARDUINO WITH THIS "unique_id"
+		704 - NO DATA FOR ARDUINO
+		
+		79x - CRITICAL SYSTEM ERROR. CONTACT THE OPERATOR. http://example.com
+		
+[-----ARDUINO RESPONCES----]
+	{GENERAL}
+		851 - WRONG "method"
+		870 - BROKEN SENSOR
+		
+		
+[------TERMINAL CODES-----]
+	{GENERAL}
+		901 - NO CONNECTION TO SERVER	
+		902 - UNKNOWN SERVER'S STATE HEADER
+		903 - NO FORMATED JSON IN SERVER RESPONSE

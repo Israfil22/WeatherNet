@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WeatherNet</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+	<meta http-equiv="Cache-Control" content="private">
+	<script src="config.js" defer></script>
+	<script src="Resources/Javascript/utilities.js" defer></script>
+	<script src="Resources/Javascript/user_interface.js" defer></script>
+	<script src="Resources/Javascript/visual.js" defer></script>
+	<script src="Resources/Javascript/dynamic.js" defer></script>
+	<link href="Resources/Styles/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+		<div id="Loading_Page" style="display: flex;align-items: center;justify-content: center; opacity: 1;">
+			<img id="Loading_Img" src="Resources/Images/preloader.gif" style="opacity: 1;" width="100" height="100">
+		</div>
+		<div id="Error_Page" style="display: none; opacity: 0;">
+			<div>
+			Критическая ошибка в работе системы. Код ошибки: <span id="Error_Page_Error_Box"></span><br>
+			Проверьте настройки конфигурации или обратитесь в поддержу.<br>
+			<br>
+			Email: help@site.com<br>
+			Телефонный номер поддержки: 8(978)-123-45-67. Время работы 10-17(ПН-ПТ)<br>
+			</div>
+		</div>
+	<div id="Background" style="opacity: 1;">	
+		<div id="Page" style="opacity: 0; display: none;">
+			<div class="Navigator">
+				<div class="Navigator_Element" id="Btn_SelectPage_Main">Управление</div>
+				<div class="Navigator_Element" id="Btn_SelectPage_Contact">Контакты</div>
+				<div class="Navigator_Element" id="Btn_SelectPage_State">Состояние системы</div>
+			</div>
+			<div class="Main">
+				<div id="Contact_page">
+					Разработчики WeatherNet©<br><br>
+					Email: help@site.com<br>
+					Телефонный номер поддержки: 8(978)-123-45-67. Время работы 10-17(ПН-ПТ)<br>
+				</div>
+				<div id="State_page">
+					ID сервера: <span id="label_server_id"></span><br>
+					Состояние: <span id="label_connection_state"></span><br>
+				</div>
+				<div id="Main_page">
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
